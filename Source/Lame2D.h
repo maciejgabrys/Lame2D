@@ -86,7 +86,7 @@ void lmDraw_Graphic(lmGraphic* lmGraphic_Pointer, lmPoint lmScreen_Point);
 void lmDraw_GraphicEx(lmGraphic* lmGraphic_Pointer, lmRectangle lmScreen_Rectangle, lmPoint lmGraphic_Point, double lmGraphic_Angle, lmFlip lmDraw_Flip);
 lmFont* lmFont_Load(const char* lmFont_File, lmStyle lmFont_Style, int lmFont_Height, int lmFont_Outline, lmHinting lmFont_Hinting, lmBool lmFont_Kerning);
 lmGraphic* lmGraphic_Load(const char* lmGraphic_File);
-lmGraphic* lmGraphic_Copy(lmGraphic* lmGraphic_Pointer, lmRectangle lmGraphic_Recntagle);
+lmGraphic* lmGraphic_Copy(lmGraphic* lmGraphic_Pointer, lmRectangle lmGraphic_Rectangle);
 void lmGraphic_SetBlending(lmGraphic* lmGraphic_Pointer, lmBlending lmGraphic_Blending, lmColor lmGraphic_Color);
 lmMusic* lmMusic_Load(const char* lmMusic_File);
 void lmMusic_Control(lmMusic* lmMusic_Pointer, lmAction lmMusic_Action, int lmMusic_Fade, lmBool lmMusic_Loop);
