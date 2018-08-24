@@ -53,6 +53,15 @@ int main(int argc, char* argv[])
 Rest of the API isn't much harder than that, you can find whole documentation on the [wiki](https://github.com/Kotziauke/Lame2D/wiki).
 
 
+## Made with Lame2D
+
+### Slime
+
+A short game which makes use of almost every aspect of Lame2D. You can check it out [here](https://github.com/Kotziauke/Slime).
+
+![Title screen](https://i.imgur.com/G3vXkHH.png) ![Third level](https://i.imgur.com/77fvnXi.png)
+
+
 ## Installing
 
 If you want to manually setup everything by yourself, the installation process is described on the [installing page](https://github.com/Kotziauke/Lame2D/wiki/Installing). However, you may just want to download a premade [Visual Studio 2017 project](https://github.com/Kotziauke/Lame2D/releases) with everything configured and ready to use!
