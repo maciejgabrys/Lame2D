@@ -314,12 +314,12 @@ lmGraphic* lmGraphic_Load(const char* lmGraphic_File)
 	return lmSDL_Texture;
 }
 
-lmGraphic* lmGraphic_Copy(lmGraphic* lmGraphic_Pointer, lmRectangle lmGraphic_Recntagle)
+lmGraphic* lmGraphic_Copy(lmGraphic* lmGraphic_Pointer, lmRectangle lmGraphic_Rectangle)
 {
-	lmGraphic* lmSDL_TextureTemporary = SDL_CreateTexture(lmgSDL_Renderer, SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_TARGET, lmGraphic_Recntagle.lmWidth, lmGraphic_Recntagle.lmHeight);
+	lmGraphic* lmSDL_TextureTemporary = SDL_CreateTexture(lmgSDL_Renderer, SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_TARGET, lmGraphic_Rectangle.lmWidth, lmGraphic_Rectangle.lmHeight);
 	SDL_SetTextureBlendMode(lmSDL_TextureTemporary, SDL_BLENDMODE_BLEND);
 	SDL_SetRenderTarget(lmgSDL_Renderer, lmSDL_TextureTemporary);
-	SDL_Rect lmSDL_TextureRect = { lmGraphic_Recntagle.lmLeft, lmGraphic_Recntagle.lmTop, lmGraphic_Recntagle.lmWidth, lmGraphic_Recntagle.lmHeight };
+	SDL_Rect lmSDL_TextureRect = { lmGraphic_Rectangle.lmLeft, lmGraphic_Rectangle.lmTop, lmGraphic_Rectangle.lmWidth, lmGraphic_Rectangle.lmHeight };
 	SDL_RenderCopy(lmgSDL_Renderer, lmGraphic_Pointer, &lmSDL_TextureRect, NULL);
 	lmGraphic* lmSDL_Texture = lmScreen_Shot();
 	SDL_SetRenderTarget(lmgSDL_Renderer, lmgSDL_Texture);
